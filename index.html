@@ -1,0 +1,189 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="assets/resources/site.webmanifest">
+  <link rel="apple-touch-icon" href="assets/img/icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <script src="assets/js/main.js"></script>
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  <header class="container">
+    <!-- Main navigation -->
+    <nav class="primary">
+      <a href="../HTML5/index.html">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+    </nav>
+  </header>
+  <!-- Main -->
+  <main itemscope itemtype="http://schema.org/Person" class="container">
+    <h1 class="page-title">Isabella Hopkins</h1>
+    <section id="about">
+      <h2 class="visuallyhidden">Personal details</h2>
+      <div class="bio">
+        <img itemprop="image" src="assets/img/profile.png" alt="Your Name" class="headshot">
+        <p itemprop="description" class="descrip">Isabella Hopkins is currently working on her BA in Web Design Development as a Sophomore at University of Arkansas at Little Rock.</p>
+      </div>
+      <dl class="details">
+        <dt>Name</dt>
+        <dd itemprop="name">
+          <span itemprop="givenName">Isabella</span> <span itemprop="familyName">Hopkins</span>
+        </dd>
+        <dt>Date of birth</dt>
+        <dd itemprop="birthDate"><time datetime="1999-04-05">04/05/1999</time></dd>
+        <dt>Nationality</dt>
+        <dd itemprop="nationality">United States</dd>
+        <dt>Location</dt>
+        <dd itemprop="homeLocation">Arkansas</dd>
+        <dt>Telephone</dt>
+        <dd>
+          <a itemprop="telephone" href="tel:501.607.4183">501.607.4183</a>
+        </dd>
+        <dt>Email</dt>
+        <dd>
+          <a itemprop="email" href="mailto:BellaSanathong@gmail.com">BellaSanathong@gmail.com</a>
+        </dd>
+        <dt>Address</dt>
+
+        <dd itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+          <span itemprop="streetAddress">15000 Chenal Parkway</span>
+          <span itemprop="addressLocality">Little Rock</span>
+          <span itemprop="postalCode">72211</span>
+          <span itemprop="addressCountry">USA</span>
+        </dd>
+
+      </dl>
+      <ul class="related-links">
+        <li><a itemprop="url" rel="me" href="https://github.com/BellaSanathong"><i class="fab fa-github-alt"></i> github</a></li>
+        <li><a itemprop="url" rel="me" href="www.linkedin.com/in/isabella-hopkins"><i class="fab fa-linkedin-in"></i> linkedin</a></li>
+        <li><a itemprop="url" href="assets/resources/resume.pdf" download><i class="far fa-file-pdf"></i> pdf resume</a></li>
+      </ul>
+    </section>
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skillstab">
+        <button class="skillsetsbutton tablink active" onclick="openskillsets('WebDesign')">Web Design</button>
+        <button class="skillsetsbutton tablink" onclick="openskillsets('Adobe')">Adobe</button>
+        <button class="skillsetsbutton tablink" onclick="openskillsets('Microsoft')">Microsoft</button>
+      </div>
+
+      <div id="WebDesign" class="skillname">
+        <span onclick="this.parentElement.style.display='none'"></span>
+        <p>
+          <ul class="skillsets" id="webdesign">
+            <li>HTML</li>
+            <li>PHP</li>
+            <li>Java</li>
+            <li>Scss</li>
+            <li>WordPress</li>
+          </ul>
+        </p>
+      </div>
+
+      <div id="Adobe" class="skillname" style="display:none">
+        <span onclick="this.parentElement.style.display='none'"></span>
+        <p>
+           <ul class="skillsets" id="adobe">
+            <li>Illustrator</li>
+            <li>InDesign</li>
+            <li>Bridge</li>
+            <li>PhotoShop</li>
+            <li>Premiere</li>
+            <li>Dreamweaver</li>
+          </ul>
+        </p>
+      </div>
+      <div id="Microsoft" class="skillname" style="display:none">
+        <span onclick="this.parentElement.style.display='none'"></span>
+        <p>
+           <ul class="skillsets" id="microsoft">
+            <li>Word</li>
+            <li>PowerPoint</li>
+            <li>Excel</li>
+            <li>Access</li>
+          </ul>
+        </p>
+      </div>
+    </section>
+    <section id="experience">
+      <h2>Experience</h2>
+      <!-- current job -->
+      <article class="job">
+        <h3 itemprop="jobTitle">Food Runner</h3>
+        <div itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+          <span itemprop="name">Cache</span>
+          <span>July 2017 - Present</span>
+          <p itemprop="description">Maintains communication between kitchen and servers, manages ticket timing, keeps kitchen on track, and delivers food to tables accordingly.</p>
+          <span itemprop="location" itemscope itemtype="http://schema.org/Place">
+          <a itemprop="url" href="https://www.cachelittlerock.com/">cachelittlerock.com</a>
+          <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+          <span itemprop="addressLocality">Downtown Little Rock, AR</span>
+          </span>
+          </span>
+        </div>
+      </article>
+      <!-- Previous Jobs - Notice Slightly Different Format-->
+      <article class="job" itemscope itemtype="http://schema.org/Event/Job">
+        <h3 itemprop="name">Marketing Intern</h3>
+        <span itemprop="location" itemscope itemtype="http://schema.org/Place">
+          <span itemprop="name">Higginbotham Family Dental</span>
+        <a itemprop="url" href="https://www.higginbothamfamilydental.com/">higginbothamfamilydental.com</a>
+        <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <span itemprop="addressLocality">Jonesboro, AR</span>
+        </span>
+        </span>
+        <span itemprop="startDate" content="2006-02-21T20:00">July 2018</span> -
+        <span itemprop="endDate" content="2009-02-21T20:00">August 2018</span>
+        <p itemprop="description">Developed website, worked with the marketing team to create and design advertisements and infographics. Recorded and processed patient information and data into documents and spreadsheets. Mailed and processed letters, sorted information, and
+          marketed business. Attended health fairs, meetings, and marketing events in order to help expand the business.</p>
+      </article>
+    </section>
+    <section id="education">
+      <h2>Education</h2>
+      <article class="certificate" itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
+        <h3 itemprop="description"><abbr title="Bachelor of Arts">BA</abbr>Web Design and Development</h3>
+        <span itemprop="name">University of Arkansas at Little Rock</span>
+        <span itemprop="location" itemscope>Little Rock, AR</span>
+        <span>2017-Present</span>
+      </article>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer class="primary">
+    <div id="copyright">
+      &copy; 2019 Isabella Hopkins
+    </div>
+  </footer>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function() { ga.q.push(arguments) };
+    ga.q = [];
+    ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+
+</html>
